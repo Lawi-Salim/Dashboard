@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: #6366f1;
+    --second-color: #c7d2fe;
+    --third-color: #e0e7ff;
+}
+
+/* Pour le body  */
+
+.old-section {
+    display: grid;
+    grid-template-columns: 230px;
+    grid-template-rows: 140px 1fr;
+    height: 100vh;
+}
+
+/* Pour la première section  */
+
+.first-section {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background: var(--first-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+}
+
+.dash{
+    height: 45px;
+    margin: 10px 0 25px 0;
+}
+
+.dash img{
+    position: relative;
+    bottom: 35px;
+    left: 15px;
+}
+
+.dash a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 53px;
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.profil{
+    height: 280px;
+}
+
+.profil .links-profil{
+    height: 40px;
+}
+
+.profil img{
+    position: relative;
+    bottom: 30px;
+    left: 18px;
+}
+
+.profil a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    left: 53px;
+    width: 11rem;
+    display: flex;
+    font-weight: 550;
+}
+
+.settings .setting{
+    height: 43px;
+}
+
+.settings a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 53px;
+    width: 11rem;
+    display: flex;
+    height: 40px;
+    font-weight: 550;
+}
+
+.settings img{
+    position: relative;
+    bottom: 30px;
+    left: 18px;
+}
+
+.dash:hover, .links-profil:hover, .setting:hover{
+    background: var(--second-color);
+}
+
+.copyright{
+    color: rgb(233, 233, 233);
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: 40px;
+    margin: 0 10px;
+}
+
+/* Pour la deuxième section  */
+
+.second-section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: var(--second-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.second-section{
+    display: grid;
+    grid-template: 2fr / 2fr;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.search input{
+    width: 600px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 6px 0;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.login span a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+}
+
+.left-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.name span{
+    font-weight: 660;
+    font-size: 14px;
+}
+
+span p{
+    font-size: 18px;
+    font-weight: 660;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--first-color);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Pour la troisième section  */
+
+.thirty-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: var(--third-color);
+}
+
+.thirty-section{
+    display: grid;
+    grid-template: repeat(2, 2fr) / repeat(2, 2fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.side-bar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 800px;
+}
+
+.side-bar h4, .top-right h4, .bottom-right h4{
+    margin-bottom: 10px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}
+
+.project{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border-left: 10px solid black;
+    box-shadow: 1px 1px 5px 0px black;
+    height: 200px;
+}
+
+.project p{
+    font-size: 15px;
+}
+
+.project .icon{
+    position: relative;
+    top: 20px;
+}
+
+.icon{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-right{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.announce{
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px black;
+}
+
+.announce hr{
+    margin: 10px 0;
+}
+
+.article-annonce p{
+    font-size: 14px;
+}
+
+.bottom-right{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.trends{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px black;
+}
+
+.trending{
+    display: grid;
+    gap: 10px;
+}
+
+.info-trends{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-trends img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #c7d2fe;
+}
+
+.info-trends p{
+    font-size: 13px;
+}
+
+.nom-trend{
+    padding-right: 25px;
+    font-size: 19px;
+    width: 150px;
+}
